@@ -7,12 +7,14 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 
 @Data
 @Builder
 @AllArgsConstructor
 public class Position {
-    private Integer position_id;
+    @Getter
+    private Integer positionID;
     @NotBlank
     @NotEmpty
     @NotNull

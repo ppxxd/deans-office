@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 
 /**
  * Студент.
@@ -15,8 +16,10 @@ import lombok.Data;
 @Builder
 @AllArgsConstructor
 public class Student {
+    @Getter
     private Integer id;
-    private Integer group_id;
+    @Getter
+    private Integer groupID;
     @NotBlank
     @NotEmpty
     @NotNull
@@ -28,5 +31,4 @@ public class Student {
     private String patronymic;
     @NotNull
     private Integer phoneNumber;
-
 }

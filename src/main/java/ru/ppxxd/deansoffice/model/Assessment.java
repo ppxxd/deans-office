@@ -1,4 +1,4 @@
-package ru.ppxxd.deantsoffice.model;
+package ru.ppxxd.deansoffice.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
@@ -7,6 +7,8 @@ import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+
+import java.time.LocalDate;
 
 /**
  * Оценка.
@@ -29,5 +31,5 @@ public class Assessment {
     @NotNull
     private String type;
     @NotNull
-    private Integer received;
+    private LocalDate received;
 }

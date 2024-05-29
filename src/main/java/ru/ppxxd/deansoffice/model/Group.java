@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 
 /**
  * Группа студентов.
@@ -16,6 +17,7 @@ import lombok.Data;
 @Builder
 @AllArgsConstructor
 public class Group {
+    @Getter
     private Integer id;
     @NotBlank
     @NotEmpty

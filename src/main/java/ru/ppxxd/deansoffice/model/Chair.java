@@ -7,11 +7,13 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 
 @Data
 @Builder
 @AllArgsConstructor
 public class Chair {
+    @Getter
     private Integer chairID;
     @NotBlank
     @NotEmpty

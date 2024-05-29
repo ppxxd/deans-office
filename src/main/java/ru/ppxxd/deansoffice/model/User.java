@@ -3,15 +3,10 @@ package ru.ppxxd.deansoffice.model;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 public class User {
     private Integer id;
     @NotBlank
@@ -23,5 +18,11 @@ public class User {
     @NotNull
     private String password;
     @NotNull
-    private Integer rights;
+    private Role role;
+
+    public enum Role {
+        ADMIN,
+        STUDENT,
+        TEACHER
+    }
 }

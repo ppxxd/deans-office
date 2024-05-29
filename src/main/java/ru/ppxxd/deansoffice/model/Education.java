@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @Data
 @Builder
 @AllArgsConstructor
-public class Education {
+public class Education { //don't have personal REST Controller
     private Integer educationID;
     @NotBlank
     @NotEmpty
